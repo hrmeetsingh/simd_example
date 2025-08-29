@@ -25,6 +25,12 @@ You can use the provided `Makefile` to build and run the example, or you can com
    make run
    ```
 
+3. **Generate assembly (optional):**
+   ```bash
+   make asm
+   # output: main.s
+   ```
+
 ### Manual Compilation and Execution
 
 1. **Compile the code:**

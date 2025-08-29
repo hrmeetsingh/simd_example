@@ -10,5 +10,9 @@ $(TARGET): main.cpp
 run:
 	./$(TARGET)
 
+# Generate assembly code with comments
+asm:
+	$(CXX) $(CXXFLAGS) -S -fverbose-asm -o main.s main.cpp
+
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) main.s
